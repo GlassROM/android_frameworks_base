@@ -63,8 +63,12 @@
             android:layout_width="18dp"
             android:layout_height="match_parent"
             android:src="@drawable/qs_dual_tile_caret"
+<<<<<<< HEAD
             android:tint="@color/qs_tiles_expand_tint"
             android:visibility="gone" />
+=======
+            android:tint="@color/qs_tiles_expand_tint" />
+>>>>>>> 7c3c62f855145447f78e0b71cf574c688ea6b8b2
     </LinearLayout>
 
     <TextView
