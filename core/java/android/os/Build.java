@@ -1103,7 +1103,6 @@ public class Build {
             }
         }
 
-        /* TODO: Figure out issue with checks failing
         if (!TextUtils.isEmpty(bootimage)) {
             if (!Objects.equals(system, bootimage)) {
                 Slog.e(TAG, "Mismatched fingerprints; system reported " + system
@@ -1111,7 +1110,7 @@ public class Build {
                 return false;
             }
         }
-
+        /* TODO: Figure out issue with checks failing
         if (!TextUtils.isEmpty(requiredBootloader)) {
             if (!Objects.equals(currentBootloader, requiredBootloader)) {
                 Slog.e(TAG, "Mismatched bootloader version: build requires " + requiredBootloader
