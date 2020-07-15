@@ -1110,7 +1110,7 @@ public class Build {
                 return false;
             }
         }
-        /* TODO: Figure out issue with checks failing
+
         if (!TextUtils.isEmpty(requiredBootloader)) {
             if (!Objects.equals(currentBootloader, requiredBootloader)) {
                 Slog.e(TAG, "Mismatched bootloader version: build requires " + requiredBootloader
@@ -1119,14 +1119,13 @@ public class Build {
             }
         }
 
-        if (!TextUtils.isEmpty(requiredRadio)) {
+        if (!TextUtils.isEmpty(requiredRadio) && !TextUtils.isEmpty(currentRadio)) {
             if (!Objects.equals(currentRadio, requiredRadio)) {
                 Slog.e(TAG, "Mismatched radio version: build requires " + requiredRadio
                         + " but runtime reports " + currentRadio);
                 return false;
             }
         }
-        */
 
         return true;
     }
